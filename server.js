@@ -1,6 +1,9 @@
-const io = require("socket.io")(5003, {
+const config = require("config");
+
+const clientPORT = config.get("CLIENT_PORT");
+
+const io = require("socket.io")(config.get("SOCKET_PORT"), {
   cors: {
-    origin: ["http://localhost:3000", "http://192.168.8.100:3000"],
     methods: ["GET", "POST"],
   },
 });

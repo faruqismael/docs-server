@@ -1,0 +1,4 @@
+{
+  "CLIENT_PORT": 4000,
+  "SOCKET_PORT": 9999
+}
